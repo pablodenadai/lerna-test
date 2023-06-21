@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.2](https://github.com/pablodenadai/lerna-test/compare/a@1.2.1...a@1.2.2) (2023-06-21)
+
+**Note:** Version bump only for package a
+
+
+
+
+
 ## [1.2.1](https://github.com/pablodenadai/lerna-test/compare/a@1.2.0...a@1.2.1) (2023-06-21)
 
 **Note:** Version bump only for package a
