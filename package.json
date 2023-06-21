@@ -13,6 +13,7 @@
     "packages/*"
   ],
   "scripts": {
-    "publish:a": "lerna publish --ignore-changes=\"packages/b/**\""
+    "publish:a": "lerna publish --ignore-changes=\"packages/b/**\"",
+    "publish:b": "lerna publish --ignore-changes=\"packages/a/**\""
   }
 }
