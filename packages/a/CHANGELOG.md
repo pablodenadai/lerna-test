@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.2.0](https://github.com/pablodenadai/lerna-test/compare/a@1.1.0...a@1.2.0) (2023-06-21)
+
+
+### Features
+
+* **a:** test ([61544be](https://github.com/pablodenadai/lerna-test/commit/61544bef3f1c22eaee6c7e5770d6732fb24496f6))
+
+
+
+
+
 # 1.1.0 (2023-06-21)
 
 
