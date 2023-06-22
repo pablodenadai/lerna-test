@@ -1,0 +1,18 @@
+name: build
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Initialize IS_WALLET_SDK_CHANGES and IS_VERIFIER_SDK_CHANGES
+        id: SDK_CHANGES
+        run: |
+          echo "=============== list modified files ==============="
+          git diff --name-only HEAD^ HEAD
