@@ -11,8 +11,24 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Initialize IS_WALLET_SDK_CHANGES and IS_VERIFIER_SDK_CHANGES
-        id: SDK_CHANGES
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 2
+
+      - name: list changes (GITHUB_BASE_REF)
+        id: list_changes_GITHUB_BASE_REF
+        run: |
+          echo "=============== list modified files ==============="
+          git fetch --depth=1 origin $GITHUB_BASE_REF
+          git diff --name-only origin/$GITHUB_BASE_REF HEAD
+          git rev-parse origin/$GITHUB_BASE_REF
+          git rev-parse HEAD
+
+      - name: list changes (HEAD)
+        id: list_changes_HEAD
         run: |
           echo "=============== list modified files ==============="
           git diff --name-only HEAD^ HEAD
+          git rev-parse HEAD^
+          git rev-parse HEAD
